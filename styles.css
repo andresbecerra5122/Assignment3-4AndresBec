@@ -45,46 +45,6 @@ header {
     width: 48%; /* Adjust the width as needed */
 }
 
-label {
-    display: block;
-    margin-bottom: 5px;
-}
-
-
-.currency-flag {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 5px;
-}
-
-input {
-    width: calc(100% - 30px);
-    padding: 8px;
-    margin-bottom: 10px;
-    padding-left: 30px; /* Space for the flag */
-}
-
-p {
-    margin: 0; /* Remove default margin for <p> element */
-}
-
-button {
-    background-color: #4caf50;
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #45a049;
-}
-
-body {
-    font-family: Arial, sans-serif;
-}
-
 .converter-container {
     display: flex;
     width: 100%;
@@ -116,14 +76,13 @@ input {
     width: 100%;
     box-sizing: border-box;
     align-items: center;
+    margin-bottom: 10px;
+    padding-left: 30px; /* Space for the flag */
 }
 
 .flag {
-    width: 15%; /* Adjusted flag size */
-    position: absolute;
-    right: 8%;
-    top: 45%;
-    transform: translateY(-50%);
+    width: 100%; /* Make the image fill the container */
+    height: auto;
 }
 
 .symbol-container {
@@ -136,6 +95,17 @@ input {
     width: 20px; /* Adjust the symbol image size as needed */
 }
 
+.flag-container {
+    display: inline-block;
+    background-color: #3498db; /* Set your desired background color */
+    padding: 10px; /* Adjust padding as needed */
+    width: 15%; /* Adjusted flag and container size */
+    position: absolute;
+    right: 8%;
+    top: 45%;
+    transform: translateY(-50%);
+}
+
 /* media query to remove and column  */
 @media (max-width: 600px) {
     .currency-input {
@@ -145,11 +115,15 @@ input {
     .symbol-container {
         margin: 10px 0;
     }
+
+    .converter-container{
+        flex-direction: column;
+    }
 }
 
 /* Media query to hide flags when textbox is smaller than the flag */
 @media (max-width: 400px) {
-    .flag {
+    .flag-container {
         display: none;
     }
 }
