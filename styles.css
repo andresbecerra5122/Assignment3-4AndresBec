@@ -136,7 +136,7 @@ input {
     width: 20px; /* Adjust the symbol image size as needed */
 }
 
-
+/* media query to remove and column  */
 @media (max-width: 600px) {
     .currency-input {
         width: 100%;

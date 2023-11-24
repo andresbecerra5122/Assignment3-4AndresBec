@@ -1,15 +1,15 @@
-// Currency conversion rates
-const cadToUsdRate = 0.75; // Replace with the actual rate
-const usdToCadRate = 1.33; // Replace with the actual rate
+// hardcoded Currency conversion rates
+const cadToUsdRate = 0.75; 
+const usdToCadRate = 1.33; 
 
 // Function to convert CAD to USD dynamically
 function convertCADtoUSD(cadInput) {
-    // Validate input
+    
     if (isNaN(cadInput) || cadInput === "") {
         return "";
     }
 
-    // Perform conversion
+    // Perform conversion 1 CAD TO USD
     const usdResult = parseFloat(cadInput) * cadToUsdRate;
 
     // Return formatted result
@@ -18,12 +18,12 @@ function convertCADtoUSD(cadInput) {
 
 // Function to convert USD to CAD dynamically
 function convertUSDtoCAD(usdInput) {
-    // Validate input
+    //validate inputs
     if (isNaN(usdInput) || usdInput === "") {
         return "";
     }
 
-    // Perform conversion
+    // Perform conversion 2 USD TO CAD
     const cadResult = parseFloat(usdInput) * usdToCadRate;
 
     // Return formatted result
