@@ -1,0 +1,155 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+header {
+    background-color: #3498db; /* Set your desired background color */
+    padding: 15px;
+    width: 100%;
+    text-align: center;
+    color: white; /* Set text color to be visible on the background */
+}
+
+.sub-header {
+    background-color: #3498db; /* Same background color as the header */
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+.sub-header p {
+    font-size: 16px; /* Set your desired font size */
+    margin: 0;
+    color: white; /* Set text color to be visible on the background */
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%; /* Adjust the width as needed */
+    max-width: 600px; /* Set a maximum width to maintain readability */
+    margin: 0 auto; /* Center the container horizontally */
+    height: 80vh; /* Adjust the height as needed */
+}
+
+.currency-input {
+    width: 48%; /* Adjust the width as needed */
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+
+.currency-flag {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 5px;
+}
+
+input {
+    width: calc(100% - 30px);
+    padding: 8px;
+    margin-bottom: 10px;
+    padding-left: 30px; /* Space for the flag */
+}
+
+p {
+    margin: 0; /* Remove default margin for <p> element */
+}
+
+button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.converter-container {
+    display: flex;
+    width: 100%;
+    justify-content: center; /* Center contents horizontally */
+    align-items: center;
+}
+
+.currency-input {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.currency-symbol {
+    margin-right: 5px;
+}
+
+.input-container {
+    position: relative;
+    width: calc(100% - 10px); /* Adjusted width with padding */
+    padding: 10px; /* Adjusted padding with absolute units */
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+
+input {
+    padding: 8%;
+    width: 100%;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+.flag {
+    width: 15%; /* Adjusted flag size */
+    position: absolute;
+    right: 8%;
+    top: 45%;
+    transform: translateY(-50%);
+}
+
+.symbol-container {
+    display: flex;
+    align-items: center;
+    margin: 0 10px; /* Adjust the margin as needed */
+}
+
+.symbol {
+    width: 20px; /* Adjust the symbol image size as needed */
+}
+
+
+@media (max-width: 600px) {
+    .currency-input {
+        width: 100%;
+    }
+
+    .symbol-container {
+        margin: 10px 0;
+    }
+}
+
+/* Media query to hide flags when textbox is smaller than the flag */
+@media (max-width: 400px) {
+    .flag {
+        display: none;
+    }
+}
